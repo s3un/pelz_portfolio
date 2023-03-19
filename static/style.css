@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Zilla+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@100&family=Secular+One&family=Zilla+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Sarabun:wght@100&family=Secular+One&family=Zilla+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Sarabun:wght@100&family=Secular+One&family=Sofia+Sans+Semi+Condensed:ital,wght@0,800;1,300;1,700&family=Zilla+Slab:wght@300&display=swap");
+
+/* navbar */
+.menuset {
+    justify-content: right;
+    padding-right: 200px;
+}
+
+.navset {
+    background-color: #000000;
+}
+
+.indset {
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-family: "Sarabun", sans-serif;
+    font-family: "Secular One", sans-serif;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-family: "Zilla Slab", serif;
+    font-weight: bold;
+}
+
+.indset:hover {
+    border: 1px solid white;
+    color: white;
+    
+}
+
+.imgset {
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-family: "Sarabun", sans-serif;
+    font-family: "Secular One", sans-serif;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-family: "Zilla Slab", serif;
+    font-weight: bold;
+}
+
+.textwall {
+  margin-top: 50px;
+}
+
+.textwall1 {
+  text-align: left;
+  
+}
+.wallimage {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: unset;
+}
+
+.wallimage img {
+  /* width: 500px; */
+  height: 400px;
+  position: relative;
+  /* margin-left: 300px; */
+}
+
+.wallbut {
+  margin-top: 40px;
+  border: 2px solid #000000;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px 50px 10px 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+.wallbut:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.subwall {
+  padding-top: 30px;
+  font-size: large;
+}
+
+.subwall2 {
+  padding-top: 50px;
+}
+
+.textwall3 {
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.borda {
+  border: 1px solid red;
+}
+
+.textwall1 h1 {
+  font-family: "Secular One", sans-serif;
+}
+
+.textwall2 {
+  font-family: "Secular One", sans-serif;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.spectext {
+  font-family: "Secular One", sans-serif;
+  font-size: 25px;
+}
+
+.recon {
+  font-family: "Secular One", sans-serif;
+  font-size: 25px;
+  margin-top: 90px;
+  padding-bottom: 10px;
+}
+
+.textwall1 h5 {
+  font-family: "Secular One", sans-serif;
+}
+
+.textwall1 p {
+  font-family: "Secular One", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.imageset {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.socials img {
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+.socials img:hover {
+  font-size: 10px;
+}
+
+.navtext {
+  display: inline-block;
+  font-family: "Secular One", sans-serif;
+}
+
+.secondwall {
+  margin-top: 70px;
+}
+
+.skillboda {
+  width: 90px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #e7e7e7;
+}
+
+.firstbut {
+  background-color: #97c3ff;
+  border: none;
+  font-family: "Secular One", sans-serif;
+}
+
+.thirdwall {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.thirdimageset {
+  width: 100px;
+  height: 90px;
+  max-width: 100px;
+  max-height: 90px;
+}
+
+.fourthwall .textwall2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fifthwall .textwall2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.sixthwall .textwall2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+/* contact */
+
+.contactform {
+  text-align: center;
+  padding-top: 80px;
+  font-family: "Secular One", sans-serif;
+  font-size: 25px;
+}
+
+.labeledit {
+  padding-top: 10px;
+}
+
+.meset {
+  width: 300px;
+}
+
+.contactbutton {
+  margin-top: 20px;
+  border: 2px solid #000000;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px 10px 10px 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Zilla Slab", serif;
+
+}
+
+.contactbutton:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.servicetext {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.services p {
+  padding-left: 5em;
+  text-align: left;
+  font-size: 3em;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.servicebut {
+  margin-left: 40px;
+  border: 2px solid #000000;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px 10px 10px 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+.servicebut:hover {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.sndbut {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.gentext {
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.card-title {
+    font-family: "Secular One", sans-serif;
+    text-align: center;
+
+}
+
+.card-text {
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Secular One", sans-serif;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.card:hover .card-img-top {
+    transform: rotateY(180deg);
+  }

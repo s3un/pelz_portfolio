@@ -1,0 +1,458 @@
+<html>
+  <head>
+    <title>OS portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+      <script type="text/javascript">
+          function submitEmailForm(form) {
+            var obj = new XMLHttpRequest();
+            obj.onreadystatechange = function(){
+              if(obj.readyState == 4){
+                if(obj.status == 200){
+                  var res = JSON.parse(obj.responseText);
+                  alert(res.message);
+                }
+                else{
+                  alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+                }
+              }
+            };
+            obj.open("post", form.action, true);
+            obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+            obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+            return false;
+          }
+      </script>
+  </head>
+  <body>
+    <!-- <nav class="navabr navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navabr-brand" imageset2 href="#">
+                    <img src="./images/pelz.jpg"width="60" height="60" class="imageset Bootstrap" />
+                </a
+                
+            </div>
+            <h5 class="navtext">Pelumi Fadairo</h5>
+        </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light navset">
+      <a 
+      class="navbar-brand imgset" 
+      href="#"
+     
+        ><img
+          src="./images/pelz.jpg"
+          width="60"
+          height="60"
+          class="imageset Bootstrap"
+          style="margin-left: 100px;"
+      />luwapelumi Fadairo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menuset" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link indset" href="#qualification">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link indset" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link indset" href="#recommendation">Recommendations</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link indset" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="textwall container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-6 textwall1">
+          <h1 class="subwall2">
+            I'm
+            <span
+              style="
+                background-color: rgb(239, 243, 8);
+                color: rgb(15, 14, 14);
+                padding-right: 50px;
+                padding-bottom: 20px;
+              "
+              >Oluwapelumi..</span
+            >
+          </h1>
+          <p class="subwall">
+            Experienced marketing communications professional with over <span style="font-weight: bolder; 
+            font-size: 30px; background-color: black; color: white;">6 years</span>
+            of experience credited with delivering significant revenue growth in
+            competitive business environments, through a combination of
+            branding, marketing, business development, and management consulting
+            expertise.
+          </p>
+
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/oluwapelumi-fadairo-29b5a3114/details/recommendations/?detailScreenTabIndex=0"><img
+              src="./images/linkedin.png"
+              href="https://www.linkedin.com/in/oluwapelumi-fadairo-29b5a3114/"
+            /></a>
+            <a href="#"><img src="./images/instagram.png"/></a>
+            <img src="./images/twitter.png" href="" />
+            <img src="./images/whatsapp.png" href="" />
+          </div>
+          <a href="#contact" ><button class="wallbut">Contact</button></a>
+        </div>
+
+        <div class="col-md-4 wallimage">
+          <img src="./images/proimg.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="secondwall container">
+      <div class="row">
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-3">
+          <img class="meset" src="./images/wall burst.png" />
+        </div>
+        <div class="col-md-8">
+          <h5 class="spectext">
+            This is<span
+              style="
+                background-color: rgb(239, 243, 8);
+                color: rgb(15, 14, 14);
+                padding-right: 50px;
+                padding-bottom: 20px;
+              "
+            >
+              Me!</span
+            >
+          </h5>
+
+          <p class="textwall3">
+            Pelumi has demonstrated the ability to lead teams to exceptional
+            performance and results. She is highly functional in an environment
+            where she can harness her strengths of complex problem-solving
+            skills, flair to learn, analytical thinking, and emotional
+            intelligence.
+            <br />A skilled communicator who works well with external & internal
+            stakeholders, management, clients, and team members. She has a
+            passion for creating purposeful impact and doing meaningful work and
+            when she is not working, she spends her time consulting at start-ups
+            and Non-Profit Organizations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdwall container">
+      <h5 id="qualification" class="textwall2">Qualifications</h5>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="thirdimageset" src="./images/google.png" />
+          <label class="servicetext"
+            >Certified Digital Marketer by Google</label
+          >
+        </div>
+        <div class="col-md-2">
+          <img class="thirdimageset" src="./images/CIM.png" />
+          <label class="servicetext"
+            >The Chartered Institute of Marketing
+          </label>
+        </div>
+
+        <div class="col-md-2">
+          <img class="thirdimageset" src="./images/CIM.png" />
+          <label class="servicetext"
+            >The Chartered Institute of Marketing
+          </label>
+        </div>
+
+        <div class="col-md-2">
+          <img class="thirdimageset" src="./images/CIM.png" />
+          <label class="servicetext"
+            >The Chartered Institute of Marketing
+          </label>
+        </div>
+
+        <div class="col-md-2">
+          <img class="thirdimageset" src="./images/CIM.png" />
+          <label class="servicetext"
+            >The Chartered Institute of Marketing
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="fourthwall container">
+      <h5 id="services" class="textwall2">Services</h5>
+      <p class="servicetext">
+        I can adapt to any role and environment. I embrace challenges and
+        welcome individuality.
+      </p>
+      <div class="row">
+        <div class="col-md-12 services">
+          <p>
+            <span style="background-color: rgb(5, 0, 0); color: white"
+              >Copy Writing</span
+            >
+            Content Strategy
+            <span style="background-color: rgb(5, 0, 0); color: white"
+              >Advertising</span
+            ><br />
+            Campaign Managment
+            <span style="background-color: rgb(5, 0, 0); color: white"
+              >Design</span
+            >
+            Seo<br /><span style="background-color: rgb(5, 0, 0); color: white">
+              Branding</span
+            >
+            Social Media
+            <span style="background-color: rgb(5, 0, 0); color: white"
+              >Email Marketing</span
+            ><br />
+            Research
+            <span style="background-color: rgb(5, 0, 0); color: white"
+              >Data Analytics</span
+            >
+            Digital Marketing
+          </p>
+
+          <div class="sndbut">
+            <button href="" class="servicebut">See full Resume</button>
+            <button href="" class="servicebut">See full portfolio</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+        <div class="fifthwall container">
+            <h5 class="textwall2">Recommendations</h5>
+            <div class="row">
+                
+                    
+            </div>
+        </div> -->
+
+  
+    <div class="reconbody">
+      <center><h5 id="recommendation" class="recon">Recommendations</h5></center>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./images/jimi.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Israel Olujimi</h5>
+            <p class="card-text">Pelumi is a fantastic person and a goal getter, she has a good heart and would be a value to any organization. </p>
+            <center>
+              <a href="#"><img 
+                style="width: 40px;
+                "
+                src="./images/linkedin.png" /></a>
+            </center>
+          </div>
+        </div></div>
+  
+        <div class="item"><div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/tope.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Temitope Babaoye</h5>
+            <p class="card-text">Pelumi is a remarkable colleague. She is not one to give excuses on assigned tasks but always finds a way to creatively execute briefs.
+               She is hardworking, resilient and a great team player or leader whatever the circumstance.</p>
+               <center>
+                <a href="#"><img 
+                  style="width: 40px;
+                  "
+                  src="./images/linkedin.png" /></a>
+              </center>
+          </div>
+        </div></div>
+  
+        <div class="item"><div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./images/ant.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Anthony Nwagba</h5>
+            <p class="card-text">Pelumi and I have worked together across diverse functions for several years, and I have watched her grow in her career, 
+              increasing her responsibilities and achieving great things.</p>
+              <center>
+                <a href="#"><img 
+                  style="width: 40px;
+                  "
+                  src="./images/linkedin.png" /></a>
+              </center>
+          </div>
+        </div></div>
+  
+        <div class="item"><div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./images/assam.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Assam Victor-Ifeanyi</h5>
+            <p class="card-text">Pelumi is an asset of inestimable value. She is a professional to the core who believes in "getting the job done" no matter the obstacles and challenges. 
+              Working with her has been an absolute delight.</p>
+              <center>
+                <a href="#"><img 
+                  style="width: 40px;
+                  "
+                  src="./images/linkedin.png" /></a>
+              </center>
+          </div>
+        </div></div>
+  
+        <div class="item"><div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./images/naomi.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Naomi David</h5>
+            <p class="card-text">Having worked closely with Pelumi, I must say she is an excellent marketing communications professional. She has profound experience of business tech development and knowledge of strategies to engage.
+              </p>
+              <center>
+                <a href="https://www.linkedin.com/in/naomiddavid/"><img 
+                  style="width: 40px;
+                  "
+                  src="./images/linkedin.png" /></a>
+              </center>
+          </div>
+        </div></div>
+    </div>
+    </div>
+      
+    
+
+  
+    <div class="sixthwall container">
+      <div class="row">
+        <div class="col-md-2">
+          <!-- <img src="./images/talk.png"width="190" height="190" /> -->
+        </div>
+        <div class="col-md-8">
+          <p id="contact" class="contactform">Contact Form</p>
+          <p class="gentext">
+            Thanks for checking out my website! Please reach out if you have any
+            questions, opportunities, or advice. I would love to hear from you!
+          </p>
+          <form action="/contact" method="POST" onsubmit="return submitEmailForm(this);">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="labeledit gentext" for="inputEmail4">Full Name</label>
+                <input type="email" name="name" class="form-control" id="inputEmail4" />
+              </div>
+
+              <div class="form-group">
+                <label class="labeledit gentext" for="inputEmail4">Email</label>
+                <input type="email" name="email" class="form-control" id="inputEmail4" />
+              </div>
+
+              <div class="form-group">
+                <label class="labeledit gentext" for="exampleFormControlTextarea1"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <center><button class="contactbutton">Send Message</button></center>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+      <p class="contactform">Oluwapelumi Fadairo</p>
+
+      <div class="socials">
+        <img
+          src="./images/linkedin.png"
+          href="https://www.linkedin.com/in/oluwapelumi-fadairo-29b5a3114/"
+        />
+        <img src="./images/instagram.png" href="" />
+        <img src="./images/twitter.png" href="" />
+        <img src="./images/whatsapp.png" href="" />
+        <p class="gentext">2023</p>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    
+   $('.owl-carousel').owlCarousel({
+    center:true,
+    autoplay:true,
+    loop:true,
+    margin:10,
+    slideBy: "page",
+    nav:true,
+    mouseDrag: true,
+    touchDrag: true,
+    dots:false,
+    autoplayHoverPause: true,
+    fluidSpeed: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  </script>
+</html>
